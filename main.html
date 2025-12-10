@@ -1,16 +1,112 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaw's News</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        .header {
+            background-color: #011e29;
+            color: white;
+            text-align: center;
+            padding: 25px 0;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* Main container */
+        .container {
+            margin: 20px auto;
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Latest News Section */
+        .latest-news-section {
+            width: 20%;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        /* Main Article Section */
+        .mainArticle {
+            width: 55%;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .mainArticle p {
+            text-align: justify;
+            line-height: 1.6;
+            margin-top: 15px;
+        }
+
+        /* Pictorial News Section */
+        .pictorial-news-section {
+            width: 20%;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .pictorial-news-section img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <header class="header">
+        Shaw's News
+    </header>
+
+    <div class="container">
+
+        <!-- Latest News -->
+        <div class="latest-news-section">
+            <h3>Latest News Articles</h3>
+            <ul>
+                <li>Article 1</li>
+                <li>Article 2</li>
+                <li>Article 3</li>
+            </ul>
+        </div>
+
+        <!-- Main Article -->
+        <div class="mainArticle">
+            <h2>Main Article</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor magna eu fringilla malesuada,
+                ipsum risus eleifend est, non feugiat quam augue euismod eros. Sed malesuada magna eu fringilla
+                malesuada, ipsum risus eleifend est, non feugiat quam augue euismod eros.
+            </p>
+        </div>
+
+        <!-- Pictorial News -->
+        <div class="pictorial-news-section">
+            <h3>Pictorial News</h3>
+            <img src="https://images.pexels.com/photos/54300/pexels-photo-54300.jpeg" alt="Image_one">
+            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" alt="Image_two">
+            <img src="https://images.pexels.com/photos/3184613/pexels-photo-3184613.jpeg" alt="Image_three">
+        </div>
+
+    </div>
 
 </body>
-
 </html>
